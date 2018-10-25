@@ -1,0 +1,59 @@
+{
+  "name": "@sasadjolic/express-auth",
+  "description": "Simple encrypted JWT/JWE authentication for Express servers and APIs",
+  "version": "1.0.0",
+  "keywords": [
+    "express",
+    "authentication",
+    "jwt",
+    "jwe",
+    "tokens",
+    "API"
+  ],
+  "homepage": "https://github.com/sasadjolic/express-auth",
+  "author": "Sasa Djolic <sasa.djolic@gmail.com> (https://www.linkedin.com/in/sasadjolic/)",
+  "maintainers": [
+    "Sasa Djolic <sasa.djolic@gmail.com> (https://www.linkedin.com/in/sasadjolic/)"
+  ],
+  "contributors": [
+    "Sasa Djolic <sasa.djolic@gmail.com> (https://www.linkedin.com/in/sasadjolic/)"
+  ],
+  "bugs": {
+    "url": "https://github.com/sasadjolic/express-auth/issues"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sasadjolic/express-auth.git"
+  },
+  "scripts": {
+    "standard": "standard --fix",
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "main": "./lib/index",
+  "types": "./lib/index.d.ts",
+  "standard": {
+    "ignore": [
+      "/examples/**/*.js",
+      "/test/**/*.js"
+    ]
+  },
+  "devDependencies": {
+    "deep-equal": "^1.0.1",
+    "express": "^4.16.4",
+    "mocha": "^5.2.0",
+    "request": "^2.88.0"
+  },
+  "dependencies": {
+    "@types/express": "^4.16.0",
+    "@types/node": "^10.11.2",
+    "node-webtokens": "^1.0.0"
+  },
+  "engines": {
+    "node": "^10.7.0",
+    "npm": "^6.4.1"
+  }
+}
