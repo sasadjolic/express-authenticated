@@ -1,5 +1,5 @@
-// Type definitions for krs-service-pricing
-// Project: krs-service-pricing
+// Type definitions for @sasadjolic/express-authenticated
+// Project: @sasadjolic/express-authenticated
 // Definitions by: Sasa Djolic <https://www.linkedin.com/in/sasadjolic/>
 
 import * as express from 'express'
@@ -10,7 +10,7 @@ export interface Credentials {
 }
 
 export interface ValidationFunction {
-    (credentials: Credentials): Credentials;
+    (credentials: Credentials): Credentials | undefined | null;
 }
 
 export interface ReissuanceFunction {

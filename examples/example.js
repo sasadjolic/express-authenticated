@@ -21,7 +21,7 @@ async function main () {
     validate: function (credentials) {
       // Validate that claims made in client-provided credentials are valid, usually by
       // checking against a database table of usernames and passwords. If validation fails,
-      // return null, undefined, or false.
+      // return null or undefined.
       if (credentials.scheme === 'Basic') {
         // If unknown credentials, reject them.
         if (!equal(credentials.claims, { username, password })) return null
