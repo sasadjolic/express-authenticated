@@ -1,7 +1,7 @@
 {
-  "name": "@sasadjolic/express-auth",
+  "name": "express-authenticated",
   "description": "Simple encrypted JWT/JWE authentication for Express servers and APIs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "keywords": [
     "express",
     "authentication",
@@ -10,7 +10,7 @@
     "tokens",
     "API"
   ],
-  "homepage": "https://github.com/sasadjolic/express-auth",
+  "homepage": "https://github.com/sasadjolic/express-authenticated",
   "author": "Sasa Djolic <sasa.djolic@gmail.com> (https://www.linkedin.com/in/sasadjolic/)",
   "maintainers": [
     "Sasa Djolic <sasa.djolic@gmail.com> (https://www.linkedin.com/in/sasadjolic/)"
@@ -19,12 +19,12 @@
     "Sasa Djolic <sasa.djolic@gmail.com> (https://www.linkedin.com/in/sasadjolic/)"
   ],
   "bugs": {
-    "url": "https://github.com/sasadjolic/express-auth/issues"
+    "url": "https://github.com/sasadjolic/express-authenticated/issues"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sasadjolic/express-auth.git"
+    "url": "https://github.com/sasadjolic/express-authenticated.git"
   },
   "scripts": {
     "standard": "standard --fix",
