@@ -6,7 +6,7 @@ import * as express from 'express'
 
 export interface Credentials {
     scheme: string;
-    claims: string[];
+    claims: { [claimKey: string]: string };
 }
 
 export interface ValidationFunction {
