@@ -10,11 +10,11 @@ export interface Credentials {
 }
 
 export interface ValidationFunction {
-    (credentials: Credentials): Credentials | undefined | null;
+    (credentials: Credentials): Credentials | undefined | null | Promise<Credentials | undefined | null>;
 }
 
 export interface ReissuanceFunction {
-    (credentials: Credentials): Credentials;
+    (credentials: Credentials): Credentials | Promise<Credentials>;
 }
 
 export interface AuthenticatorOptions {
