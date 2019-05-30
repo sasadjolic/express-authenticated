@@ -43,7 +43,7 @@
   },
   "devDependencies": {
     "express": "^4.16.4",
-    "mocha": "^5.2.0",
+    "mocha": "^6.1.4",
     "request": "^2.88.0"
   },
   "dependencies": {
