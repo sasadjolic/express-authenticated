@@ -31,3 +31,7 @@ export class Authenticator {
     public authenticated(): express.RequestHandler
     public authorized(filter: express.Router): express.RequestHandler
 }
+
+export function encode(content: { payload: object, issuer: string, secret: string } ): Promise<string>
+
+export function decode(content: { token: string, issuer: string, secret: string } ): Promise<object>
