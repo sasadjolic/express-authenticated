@@ -10,7 +10,7 @@ export interface Credentials {
 }
 
 export interface ValidationFunction {
-    (credentials: Credentials): Credentials | undefined | null | Promise<Credentials | undefined | null>;
+    (credentials: Credentials, body?: any): Credentials | undefined | null | Promise<Credentials | undefined | null>;
 }
 
 export interface ReissuanceFunction {
