@@ -32,6 +32,6 @@ export class Authenticator {
     public authorized(filter: express.Router): express.RequestHandler
 }
 
-export function encode(content: { payload: object, issuer: string, secret: string } ): Promise<string>
+export function encode(content: { payload: { [key: string]: string }, issuer: string, secret: string } ): Promise<string>
 
-export function decode(content: { token: string, issuer: string, secret: string } ): Promise<object>
+export function decode(content: { token: string, issuer: string, secret: string } ): Promise<{ [key: string]: string }>
